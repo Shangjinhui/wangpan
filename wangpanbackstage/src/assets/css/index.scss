@@ -1,0 +1,211 @@
+.login{
+    width:100vw;
+    height:100vh;
+    .bg-img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .login-inner{
+        width: 470px;
+        height: 493px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        .logo{
+            width:140px;
+            height:56px;
+        }
+    }
+}
+// 菜单
+.menu-out{
+    width:228px;
+    height:100vh;
+    .el-menu{
+        border:0;
+        &>.el-submenu.open>.el-submenu__title{
+            background:#CF1342;
+            border-radius: 4px;
+        }
+        .el-submenu__title{
+            height:30px;
+            line-height:30px;
+        }
+        &>.el-submenu>.el-submenu__title{
+            height:44px;
+            line-height:44px;
+        }
+        .my-submenu-group{
+            .el-submenu__title{
+                padding:0!important;
+            }
+            span{
+                display:block;
+                padding:0 20px 0 40px;
+            } 
+        }
+        .el-submenu__icon-arrow{display:none;}
+        .el-submenu__title:focus, .el-submenu__title:hover{  
+            background: none;  
+        }  
+
+        .fspan{color:#fff;}
+    }
+    
+}
+//消息提示框
+.el-message-box{
+    .el-button--default{
+        &:hover{
+            background-color:#fff;
+            color:#606266;
+            border-color:#DCDFE6;
+        }
+    }
+    .el-button--primary{
+        background-color:#CF1342;
+        border-color:#CF1342;
+    }
+}
+// main
+.main{
+    height:calc(100vh - 80px);
+    padding:24px;
+    overflow: auto;
+}
+.mask{
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,.5);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:9;
+    .mask-inner{
+        background: #FFFFFF;
+        box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        border: 1px solid #EEEEEE;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        .close{
+            position: absolute;
+            right:15px;
+            top:15px;
+        }
+    }
+}
+//radio样式
+.my-radio{
+    input[type="radio"] {
+        display: none;
+    }
+    input[type='radio'] + label{position: relative;padding-left:27px;}
+    input[type='radio'] + label:before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #B5B9C1;
+        box-sizing: border-box;
+        position: absolute;
+        left:0;
+        top:-2px;
+    }
+    input[type='radio']:checked + label:before{
+        border: 2px solid  #CF1342;
+    }
+    input[type='radio']:checked + label:after{
+        content: "";
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background:#CF1342;
+        position: absolute;;
+        left:3px;
+        top:1px;
+    }
+}
+// 
+.my-table{
+    .cell{text-align: left;}
+    table{
+        tr{
+            th:nth-of-type(1),td:nth-of-type(1){
+                padding-left:68px;
+            }
+        }
+    }
+    .el-table__header{
+        height:36px;
+        
+        th,tr{
+            color:#333;
+            padding:16px 0;
+            background:#f7f8f9;
+        }
+    }
+    .el-table__body{
+        tr,td{color:#333;}
+        tr{height:70px;}
+    }
+}
+.my-table2{
+    .cell{text-align: left;}
+    table{
+        tr{
+            th:nth-of-type(1),td:nth-of-type(1){
+                padding-left:68px;
+            }
+        }
+    }
+    .el-table__header{
+
+        th,tr{
+            color:#333;
+        }
+    }
+    .el-table__header{
+        height:36px;
+        
+        th,tr{
+            color:#333;
+            padding:6px 0;
+            background:#f7f8f9;
+        }
+    }
+}
+// 
+.my-select{
+    .el-input.is-focus .el-input__inner{
+        border-color:#CF1342;
+    }
+}
+
+//
+.el-input__inner::placeholder {
+    color: #DCDFE6;
+}
+ /* 谷歌 */
+.el-input__inner::-webkit-input-placeholder {
+    color: #DCDFE6;
+}
+ /* 火狐 */
+.el-input__inner:-moz-placeholder {
+    color: #DCDFE6;
+}
+ /*ie*/
+.el-input__inner:-ms-input-placeholder {
+    color: #DCDFE6;
+}
+
